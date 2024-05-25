@@ -158,37 +158,37 @@ function Home() {
                         <div className={styles.Gustavo}>
                             <div className={styles.Informacoes}>
                                 <h1>Gustavo Silva</h1>
-                                <h2>Diretor</h2>
+                                <h2>Gerenciador de Sistemas</h2>
                             </div>
                         </div>
                         <div className={styles.Emerson}>
                             <div className={styles.Informacoes}>
                                 <h1>Emerson Sales</h1>
-                                <h2>Dev./Designer</h2>
+                                <h2>Gerenciador de ADS</h2>
                             </div>
                         </div>
                         <div className={styles.Samuel}>
                             <div className={styles.Informacoes}>
                                 <h1>Samuel Bispo</h1>
-                                <h2>Desenvolvedor</h2>
+                                <h2>CEO</h2>
                             </div>
                         </div>
                         <div className={styles.Kauan}>
                             <div className={styles.Informacoes}>
                                 <h1>Kauan Rodrigues</h1>
-                                <h2>Desenvolvedor</h2>
+                                <h2>Coord. de Processos</h2>
                             </div>
                         </div>
                         <div className={styles.Joao}>
                             <div className={styles.Informacoes}>
                                 <h1>João Augusto</h1>
-                                <h2>Diretor Comercial</h2>
+                                <h2>Coord. de Estatística </h2>
                             </div>
                         </div>
                         <div className={styles.Otavio}>
                             <div className={styles.Informacoes}>
                                 <h1>Otavio Garcia</h1>
-                                <h2>Atendente</h2>
+                                <h2>Coord. do Dep. Pessoal</h2>
                             </div>
                         </div>
                     </div>

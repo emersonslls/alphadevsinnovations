@@ -895,7 +895,7 @@ header {
     padding: 0px;
 
     position: absolute;
-    width: 280px;
+    width: 420px;
     height: 65px;
     left: 33px;
     top: 164px;
@@ -923,7 +923,7 @@ header {
 }
 
 .Informacoes h2 {
-    width: 275px;
+    width: 410px;
     height: 46px;
     text-align: left;
 
@@ -1909,7 +1909,7 @@ header {
     }
 
     .Informacoes {
-        width: 220px;
+        width: 300px;
         height: 41.68px;
         left: 21.16px;
         top: 105.17px;
@@ -1929,10 +1929,10 @@ header {
     }
 
     .Informacoes h2 {
-        width: 215px;
+        width: 290px;
         height: 35px;
 
-        font-size: 23.5529px;
+        font-size: 21.5529px;
         line-height: 35px;
 
     }
@@ -2538,7 +2538,7 @@ header {
     }
 
     .Informacoes {
-        width: 230px;
+        width: 305px;
         height: 49.46px;
         left: 25.11px;
         top: 124.79px;
@@ -2558,7 +2558,7 @@ header {
     }
 
     .Informacoes h2 {
-        width: 225px;
+        width: 300px;
         height: 35px;
 
         font-size: 23.5529px;
@@ -3159,7 +3159,7 @@ header {
     }
 
     .Informacoes {
-        width: 230px;
+        width: 320px;
         height: 49.46px;
         left: 25.11px;
         top: 124.79px;
@@ -3179,7 +3179,7 @@ header {
     }
 
     .Informacoes h2 {
-        width: 225px;
+        width: 310px;
         height: 35px;
 
         font-size: 23.5529px;
