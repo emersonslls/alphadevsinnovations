@@ -45,6 +45,113 @@
     border-radius: 10px;
 }
 
+/* ===== SCROLL PRA CIMA ===== */
+
+.scrollCima {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 80px;
+    top: 4020px;
+
+    z-index: 99;
+}
+
+.scrollCima button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background: var(--azul);
+    box-shadow: 0px 6.66667px 16px rgba(62, 77, 92, 0.25);
+    border-radius: 2000px;
+    border: none;
+    transform: matrix(0, -1, -1, 0, 0, 0);
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 73.0252px;
+    line-height: 50px;
+    /* identical to box height, or 68% */
+    text-align: center;
+
+    color: var(--branco);
+
+    transform: rotate(-90deg);
+}
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    width: 1510px;
+    height: 100px;
+    top: 30px;
+    left: calc(50% - 1510px/2);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 449px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 50px;
+    background: rgba(198, 192, 229, 45%);
+    backdrop-filter: blur(3px);
+
+    position: fixed;
+    z-index: 999;
+}
+
+.LogoContainer img {
+    position: absolute;
+    width: 86px;
+    height: 50px;
+    left: 100px;
+    top: calc(50% - 50px/2);
+}
+
+.ButtonContato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 7.6px;
+
+    position: absolute;
+    width: 102px;
+    height: 40px;
+    right: 100px;
+    top: calc(50% - 40px/2);
+
+    background: var(--azul);
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.756px;
+    line-height: 30px;
+    text-align: center;
+
+    color: var(--preto);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 /* ========== INICIO ========== */
 
 .Inicio {
@@ -691,7 +798,7 @@
     background: linear-gradient(176.54deg, rgba(24, 24, 24, 0) 2.85%, rgba(24, 24, 24, 0.35) 67.88%), linear-gradient(90deg, rgba(24, 24, 24, 0) 63.13%, #181818 92.18%), #181818;
     border-radius: 30px;
 
-    background-image: url(../Assets/Membros/Gustavo.png);
+    background-image: url(../Assets/Membros/Emerosn.png);
     background-size: cover;
     background-position: center;
 
@@ -711,7 +818,7 @@
     background: linear-gradient(176.54deg, rgba(24, 24, 24, 0) 2.85%, rgba(24, 24, 24, 0.35) 67.88%), linear-gradient(90deg, rgba(24, 24, 24, 0) 63.13%, #181818 92.18%), #181818;
     border-radius: 30px;
 
-    background-image: url(../Assets/Membros/Gustavo.png);
+    background-image: url(../Assets/Membros/Samuel.png);
     background-size: cover;
     background-position: center;
 
@@ -731,7 +838,7 @@
     background: linear-gradient(176.54deg, rgba(24, 24, 24, 0) 2.85%, rgba(24, 24, 24, 0.35) 67.88%), linear-gradient(90deg, rgba(24, 24, 24, 0) 63.13%, #181818 92.18%), #181818;
     border-radius: 30px;
 
-    background-image: url(../Assets/Membros/Gustavo.png);
+    background-image: url(../Assets/Membros/Kauan.png);
     background-size: cover;
     background-position: center;
 
@@ -751,7 +858,7 @@
     background: linear-gradient(176.54deg, rgba(24, 24, 24, 0) 2.85%, rgba(24, 24, 24, 0.35) 67.88%), linear-gradient(90deg, rgba(24, 24, 24, 0) 63.13%, #181818 92.18%), #181818;
     border-radius: 30px;
 
-    background-image: url(../Assets/Membros/Gustavo.png);
+    background-image: url(../Assets/Membros/Joao.png);
     background-size: cover;
     background-position: center;
 
@@ -771,7 +878,7 @@
     background: linear-gradient(176.54deg, rgba(24, 24, 24, 0) 2.85%, rgba(24, 24, 24, 0.35) 67.88%), linear-gradient(90deg, rgba(24, 24, 24, 0) 63.13%, #181818 92.18%), #181818;
     border-radius: 30px;
 
-    background-image: url(../Assets/Membros/Gustavo.png);
+    background-image: url(../Assets/Membros/Otavio.png);
     background-size: cover;
     background-position: center;
 
@@ -873,106 +980,211 @@
     flex-grow: 0;
 }
 
+/* ===== CLIENTES ==== */
+
 .PrincipaisClientes {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 35.21px;
+    gap: 43.55px;
 
-    position: absolute;
+    position: relative;
     width: 1655px;
-    height: 572.21px;
-    left: calc(50% - 1655px/2 + 0.5px);
-    top: 191px;
+    height: 579.25px;
+    top: 220px;
+    left: calc(50% - 1655px/2);
 }
 
-.ClienteHorti,
-.Cliente2,
-.Cliente3 {
-    width: 528.19px;
-    height: 572.21px;
+/* ===== CLIENTE1 ==== */
 
-    background: #3E4D5C;
-    border-radius: 26.4096px;
+.Cliente1 {
+    width: 522.63px;
+    height: 579.25px;
+    border-radius: 30px 30px 0px 0px;
     position: relative;
 
-    background-image: url(../Assets/hortifutiCliente.png);
-    background-size: cover;
-    background-position: center;
+    background: var(--branco);
 
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    box-shadow: 10px 10px 25px rgba(100, 100, 100, 0.1);
 }
 
-.ClienteHorti :hover,
-.Cliente2 :hover,
-.Cliente3 :hover {
-    box-shadow: 5px 5px 10px 5px rgba(24, 24, 24, 0.2);
+.Avaliacao {
+    position: absolute;
+    width: 305.32px;
+    height: 50.09px;
+    left: 32.66px;
+    top: 26.13px;
 }
 
-.NomeProjeto h1 {
-    position: relative;
-    width: 119px;
-    height: 40px;
-    left: 40.49px;
-    top: 407.59px;
+.TextAvaliacao {
+    position: absolute;
+    width: 383.54px;
+    height: 333px;
+    left: 32.66px;
+    top: 97.99px;
+}
+
+.TextAvaliacao h1 {
+    width: 383.54px;
+    height: 333px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24.5463px;
+    line-height: 37px;
+
+    color: var(--preto);
+}
+
+.PessoaAvaliou {
+    position: absolute;
+    width: 522.63px;
+    height: 127.39px;
+    left: 0px;
+    bottom: 0px;
+
+    background: rgba(24, 24, 24, 0.5);
+    border-radius: 32.6645px 32.6645px 0px 0px;
+}
+
+.InfoPessoa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 11px;
+
+    position: absolute;
+    width: 392.97px;
+    height: 72px;
+    left: calc(50% - 392.97px/2 + 0.17px);
+    top: calc(50% - 72px/2 + 0.45px);
+}
+
+.NomeProficao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 321px;
+    height: 72px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.NomeProficao h1 {
+    width: 321px;
+    height: 46px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 26.4096px;
-    line-height: 40px;
+    font-size: 30.5214px;
+    line-height: 46px;
     /* identical to box height */
 
     color: var(--azul);
 
-    z-index: 1;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: -10px 0px;
 }
 
-.ButtonAcesse {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5.9481px 11.8962px;
-    gap: 5.95px;
-
-    position: absolute;
-    width: 87.79px;
-    height: 33.9px;
-    left: 415.51px;
-    top: 523.79px;
-
-    background: var(--azul);
-    border-radius: 17.8443px;
+.NomeProficao h2 {
+    width: 242px;
+    height: 36px;
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
-    font-size: 17.8443px;
-    line-height: 22px;
-    /* identical to box height */
+    font-weight: 500;
+    font-size: 24.113px;
+    line-height: 36px;
 
-    color: var(--branco);
+    color: var(--preto);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.FotoPerfil {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 60.97px;
+    height: 60.97px;
+
+    background-image: url(../Assets/joao\ 1.png);
+    background-size: cover;
+    background-position: center;
+
+    border: 1.08882px solid #00B7FF;
+    border-radius: 121.947px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* ===== CLIENTE3 ==== */
+
+.Cliente2 {
+    width: 522.63px;
+    height: 579.25px;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+
+    background: var(--branco);
+
     flex: none;
     order: 0;
     flex-grow: 0;
 
-    border: none;
-    z-index: 1;
+    box-shadow: 10px 10px 25px rgba(100, 100, 100, 0.1);
 }
 
-.EffectSombra {
+.ClientesFuturos {
     position: absolute;
-    width: 528.19px;
-    height: 572.21px;
-    left: 0px;
-    top: 0px;
-    border-radius: 26.4096px;
+    width: 304px;
+    height: 323.39px;
+    left: calc(50% - 304px/2 - 0.5px);
+    top: calc(50% - 323.39px/2 + 0.07px);
+}
 
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 63.85%, #181818 100%);
+/* ===== CLIENTE2 ==== */
+
+.Cliente3 {
+    width: 522.63px;
+    height: 579.25px;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+
+    background: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    box-shadow: 10px 10px 25px rgba(100, 100, 100, 0.1);
+}
+
+.ClienesFuturos {
+    position: absolute;
+    width: 304px;
+    height: 323.39px;
+    left: calc(50% - 304px/2 - 0.5px);
+    top: calc(50% - 323.39px/2 + 0.07px);
 }
 
 /* ========== Contatos ========== */
@@ -1199,6 +1411,156 @@
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+/* ===== RESPONSIVIDADE SCROLL ===== */
+
+/* ===== SCROLL PRA CIMA ===== */
+
+/* ===== CELULAR ===== */
+
+@media only screen and (width >=320px) and (width <=430px) {
+    .scrollCima {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 50px;
+        top: 6750px;
+    
+        z-index: 99;
+    }
+    
+    .scrollCima button {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+    
+        font-size: 53.0252px;
+        line-height: 50px;
+    }
+}
+
+/* ===== TABLET ===== */
+
+@media only screen and (width >=768px) and (width <=834px) {
+    .scrollCima {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        right: 80px;
+        top: 5850px;
+    
+        z-index: 99;
+    }
+    
+    .scrollCima button {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+    
+        font-size: 63.0252px;
+        line-height: 50px;
+    }
+}
+
+/* ===== NOTEBOOK ===== */
+
+@media only screen and (width >=1024px) and (width <=1440px) {
+    .scrollCima {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        right: 80px;
+        top: 4020px;
+    
+        z-index: 99;
+    }
+    
+    .scrollCima button {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+    
+        font-size: 63.0252px;
+        line-height: 50px;
+    }
+}
+
+/* ===== RESPONSIVIDADE HEADER ===== */
+
+/* ===== CELULAR ===== */
+
+@media only screen and (width >=320px) and (width <=430px) {
+    header {
+        width: 316px;
+        height: 60px;
+        top: 20px;
+        left: calc(50% - 316px/2);
+    }
+
+    .LogoContainer img {
+        width: auto;
+        height: 30px;
+        left: 20px;
+        top: calc(50% - 30px/2);
+    }
+
+    .ButtonContato {
+        width: 82px;
+        height: 30px;
+        right: 20px;
+        top: calc(50% - 30px/2);
+
+        font-size: 16px;
+    }
+}
+
+/* ===== TABLET ===== */
+
+@media only screen and (width >=768px) and (width <=834px) {
+    header {
+        width: 800px;
+        height: 80px;
+        top: 30px;
+        left: calc(50% - 800px/2);
+    }
+
+    .LogoContainer img {
+        width: auto;
+        height: 50px;
+        left: 80px;
+        top: calc(50% - 50px/2);
+    }
+
+    .ButtonContato {
+        height: 40px;
+        right: 80px;
+        top: calc(50% - 40px/2);
+    }
+}
+
+/* ===== NOTEBOOK ===== */
+
+@media only screen and (width >=1024px) and (width <=1440px) {
+    header {
+        width: 1200px;
+        height: 80px;
+        top: 30px;
+        left: calc(50% - 1200px/2);
+    }
+
+    .LogoContainer img {
+        width: auto;
+        height: 50px;
+        left: 80px;
+        top: calc(50% - 50px/2);
+    }
+
+    .ButtonContato {
+        height: 40px;
+        right: 80px;
+        top: calc(50% - 40px/2);
+    }
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -1581,7 +1943,7 @@
     .Clientes {
         position: relative;
         width: 100%;
-        height: 1400px;
+        height: 1450px;
     }
 
     .NameClientes h1 {
@@ -1591,63 +1953,140 @@
         top: 70px;
     }
 
+    /* ===== CLIENTES ==== */
+
     .PrincipaisClientes {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 25.07px;
+        gap: 30px;
 
         position: relative;
         width: 320px;
-        height: 1090.07px;
+        height: 1124.78px;
 
+        top: 220px;
         left: calc(50% - 320px/2);
-        top: 200px;
     }
 
-    .ClienteHorti,
-    .Cliente2,
-    .Cliente3 {
-        width: 319.98px;
-        height: 346.65px;
+    /* ===== CLIENTE1 ==== */
 
-        border-radius: 15.9991px;
+    .Cliente1 {
+        width: 320.23px;
+        height: 354.93px;
     }
 
-    .ClienteHorti :hover,
-    .Cliente2 :hover,
-    .Cliente3 :hover {
-        box-shadow: 5px 5px 10px 5px rgba(24, 24, 24, 0.2);
+    .Avaliacao {
+        position: absolute;
+        width: 187.08px;
+        height: 30.69px;
+        left: 20.01px;
+        top: 16.01px;
     }
 
-    .NomeProjeto h1 {
-        width: 73px;
-        height: 24px;
-        left: 24.53px;
-        top: 246.92px;
-
-        font-size: 15.9991px;
-        line-height: 24px;
+    .Avaliacao img {
+        width: 187.08px;
+        height: 30.69px;
     }
 
-    .ButtonAcesse {
-        width: 53.41px;
-        height: 20.21px;
-        left: 248.72px;
-        top: 312.32px;
+    .TextAvaliacao {
+        position: absolute;
+        width: 235.01px;
+        height: 207px;
+        left: 20.01px;
+        top: 60.04px;
+    }
 
-        border-radius: 10.8102px;
+    .TextAvaliacao h1 {
+        width: 235.01px;
+        height: 207px;
 
-        font-size: 11px;
+        font-size: 15.0404px;
+        line-height: 23px;
+    }
+
+    .PessoaAvaliou {
+        position: absolute;
+        width: 320.23px;
+        height: 78.06px;
+        left: 0px;
+        top: 276.87px;
+    }
+
+    .InfoPessoa {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 6.74px;
+
+        position: absolute;
+        width: 241.1px;
+        height: 43.87px;
+        left: calc(50% - 241.1px/2 + 0.1px);
+        top: calc(50% - 43.87px/2 + 0.27px);
+    }
+
+    .NomeProficao {
+        width: 197px;
+        height: 43.87px;
+    }
+
+    .NomeProficao h1 {
+        width: 197px;
+        height: 28px;
+
+        font-size: 18.7015px;
+        line-height: 28px;
+        margin: -6.12735px 0px;
+    }
+
+    .NomeProficao h2 {
+        width: 149px;
+        height: 22px;
+
+        font-size: 14.7749px;
         line-height: 22px;
     }
 
-    .EffectSombra {
-        width: 319.98px;
-        height: 346.65px;
+    .FotoPerfil {
+        width: 37.36px;
+        height: 37.36px;
 
-        border-radius: 15.9991px;
+        border: 0.667156px solid #00B7FF;
+        border-radius: 74.7215px;
+
+    }
+
+    /* ===== CLIENTE2 ==== */
+
+    .Cliente2 {
+        width: 320.23px;
+        height: 354.93px;
+    }
+
+    .ClientesFuturos img {
+        position: absolute;
+        width: 187px;
+        height: 198.13px;
+        left: calc(50% - 187px/2 - 0.31px);
+        top: calc(50% - 198.13px/2 + 0.04px);
+    }
+
+    /* ===== CLIENTE3 ==== */
+
+    .Cliente3 {
+        width: 320.23px;
+        height: 354.93px;
+    }
+
+    .ClientesFuturos img {
+        position: absolute;
+        width: 187px;
+        height: 198.13px;
+        left: calc(50% - 187px/2 - 0.31px);
+        top: calc(50% - 198.13px/2 + 0.04px);
     }
 }
 
@@ -2143,6 +2582,8 @@
         top: 70px;
     }
 
+    /* ===== CLIENTES ==== */
+
     .PrincipaisClientes {
         display: flex;
         flex-direction: row;
@@ -2154,54 +2595,124 @@
 
         position: relative;
         width: 800px;
-        height: 869.79px;
-
+        height: 891.82px;
+        top: 220px;
         left: calc(50% - 800px/2);
-        top: 200px;
     }
 
-    .ClienteHorti,
-    .Cliente2,
+    /* ===== CLIENTE1 ==== */
+
+    .Cliente1 {
+        width: 378.95px;
+        height: 420px;
+    }
+
+    .Avaliacao {
+        position: absolute;
+        width: 221.38px;
+        height: 36.32px;
+        left: 23.68px;
+        top: 18.95px;
+    }
+
+    .Avaliacao img {
+        width: 221.38px;
+        height: 36.32px;
+    }
+
+    .TextAvaliacao {
+        position: absolute;
+        width: 278.1px;
+        height: 243px;
+        left: 23.68px;
+        top: 71.05px;
+    }
+
+    .TextAvaliacao h1 {
+        width: 278.1px;
+        height: 243px;
+
+        font-size: 17.7979px;
+        line-height: 27px;
+    }
+
+    .PessoaAvaliou {
+        position: absolute;
+        width: 378.95px;
+        height: 92.37px;
+        left: 0px;
+        top: 327.63px;
+    }
+
+    .InfoPessoa {
+        gap: 7.98px;
+
+        position: absolute;
+        width: 285.19px;
+        height: 51.75px;
+        left: calc(50% - 285.19px/2 + 0.12px);
+        top: calc(50% - 51.75px/2 + 0.32px);
+    }
+
+    .NomeProficao {
+        width: 233px;
+        height: 51.75px;
+    }
+
+    .NomeProficao h1 {
+        width: 233px;
+        height: 33px;
+
+        font-size: 22.1303px;
+        line-height: 33px;
+
+        margin: -7.25076px 0px;
+    }
+
+    .NomeProficao h2 {
+        width: 176px;
+        height: 26px;
+
+        font-size: 17.4837px;
+        line-height: 26px;
+    }
+
+    .FotoPerfil {
+        width: 44.21px;
+        height: 44.21px;
+
+        border: 0.789474px solid #00B7FF;
+        border-radius: 88.4211px;
+    }
+
+    /* ===== CLIENTE2 ==== */
+
+    .Cliente2 {
+        width: 378.95px;
+        height: 420px;
+    }
+
+    .ClientesFuturos img {
+        position: absolute;
+        width: 221px;
+        height: 235.52px;
+        left: calc(50% - 221px/2);
+        top: calc(50% - 235.52px/2);
+    }
+
+    /* ===== CLIENTE3 ==== */
+
     .Cliente3 {
-        width: 382.98px;
-        height: 414.89px;
-
-        border-radius: 19.1489px;
+        width: 378.95px;
+        height: 420px;
     }
 
-    .ClienteHorti :hover,
-    .Cliente2 :hover,
-    .Cliente3 :hover {
-        box-shadow: 5px 5px 10px 5px rgba(24, 24, 24, 0.2);
-    }
-
-    .NomeProjeto h1 {
-        width: 119px;
-        height: 40px;
-        left: 29.36px;
-        top: 295.53px;
-
-        font-size: 26.4096px;
-        line-height: 40px;
-    }
-
-    .ButtonAcesse {
-        width: 68.25px;
-        height: 28.63px;
-        left: 295.28px;
-        top: 370.79px;
-
-        border-radius: 12.94px;
-
-        font-size: 12.94px;
-        line-height: 22px;
-    }
-
-    .EffectSombra {
-        width: 382.98px;
-        height: 414.89px;
-
-        border-radius: 19.1489px;
+    .ClientesFuturos img {
+        position: absolute;
+        width: 221px;
+        height: 235.52px;
+        left: calc(50% - 221px/2);
+        top: calc(50% - 235.52px/2);
     }
 }
 
@@ -2682,7 +3193,7 @@
     .Clientes {
         position: relative;
         width: 100%;
-        height: 880px;
+        height: 830px;
     }
 
     .NameClientes h1 {
@@ -2692,62 +3203,136 @@
         top: 70px;
     }
 
+    /* ===== CLIENTES ==== */
+
     .PrincipaisClientes {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 0px;
-        gap: 35.21px;
+        gap: 31.58px;
+
+        position: relative;
+        width: 1200px;
+        height: 420px;
+
+        top: 220px;
+        left: calc(50% - 1200px/2);
+    }
+
+    /* ===== CLIENTE1 ==== */
+
+    .Cliente1 {
+        width: 378.95px;
+        height: 420px;
+    }
+
+    .Avaliacao {
+        position: absolute;
+        width: 221.38px;
+        height: 36.32px;
+        left: 23.68px;
+        top: 18.95px;
+    }
+
+    .Avaliacao img {
+        width: 221.38px;
+        height: 36.32px;
+    }
+
+    .TextAvaliacao {
+        position: absolute;
+        width: 278.1px;
+        height: 243px;
+        left: 23.68px;
+        top: 71.05px;
+    }
+
+    .TextAvaliacao h1 {
+        width: 278.1px;
+        height: 243px;
+
+        font-size: 17.7979px;
+        line-height: 27px;
+    }
+
+    .PessoaAvaliou {
+        position: absolute;
+        width: 378.95px;
+        height: 92.37px;
+        left: 0px;
+        top: 327.63px;
+    }
+
+    .InfoPessoa {
+        gap: 7.98px;
 
         position: absolute;
-        width: 1200px;
-        height: 414.89px;
-        left: calc(50% - 1200px/2 + 0.5px);
-        top: 191px;
+        width: 285.19px;
+        height: 51.75px;
+        left: calc(50% - 285.19px/2 + 0.12px);
+        top: calc(50% - 51.75px/2 + 0.32px);
     }
 
-    .ClienteHorti,
-    .Cliente2,
+    .NomeProficao {
+        width: 233px;
+        height: 51.75px;
+    }
+
+    .NomeProficao h1 {
+        width: 233px;
+        height: 33px;
+
+        font-size: 22.1303px;
+        line-height: 33px;
+
+        margin: -7.25076px 0px;
+    }
+
+    .NomeProficao h2 {
+        width: 176px;
+        height: 26px;
+
+        font-size: 17.4837px;
+        line-height: 26px;
+    }
+
+    .FotoPerfil {
+        width: 44.21px;
+        height: 44.21px;
+
+        border: 0.789474px solid #00B7FF;
+        border-radius: 88.4211px;
+    }
+
+    /* ===== CLIENTE2 ==== */
+
+    .Cliente2 {
+        width: 378.95px;
+        height: 420px;
+    }
+
+    .ClientesFuturos img {
+        position: absolute;
+        width: 221px;
+        height: 235.52px;
+        left: calc(50% - 221px/2);
+        top: calc(50% - 235.52px/2);
+    }
+
+    /* ===== CLIENTE3 ==== */
+
     .Cliente3 {
-        width: 382.98px;
-        height: 414.89px;
-
-        border-radius: 19.15px;
+        width: 378.95px;
+        height: 420px;
     }
 
-    .ClienteHorti :hover,
-    .Cliente2 :hover,
-    .Cliente3 :hover {
-        box-shadow: 5px 5px 10px 5px rgba(24, 24, 24, 0.2);
-    }
-
-    .NomeProjeto h1 {
-        width: 119px;
-        height: 40px;
-        left: 29.36px;
-        top: 295.53px;
-
-        font-size: 26.4096px;
-        line-height: 40px;
-    }
-
-    .ButtonAcesse {
-        width: 64.25px;
-        height: 24.63px;
-        left: 301.28px;
-        top: 379.79px;
-
-        border-radius: 12.94px;
-
-        font-size: 12.94px;
-        line-height: 22px;
-    }
-
-    .EffectSombra {
-        width: 382.98px;
-        height: 414.89px;
-
-        border-radius: 19.15px;
+    .ClientesFuturos img {
+        position: absolute;
+        width: 221px;
+        height: 235.52px;
+        left: calc(50% - 221px/2);
+        top: calc(50% - 235.52px/2);
     }
 }
 

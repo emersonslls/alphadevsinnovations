@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className={styles.Desenvolvido}>
                     <h1>Desenvolvido Projetos  <a
-                        href="https://www.figma.com/@emersonssales15"
+                        href="https://www.linkedin.com/in/emerson-sales-9a5a49277/" 
                         target="_blank"
                     ><span> <img src={LogoEmerson} /></span></a> Emerson Sales </h1>
                 </div>

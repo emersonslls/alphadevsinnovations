@@ -5,15 +5,15 @@ import React, { useEffect, useState, useRef } from 'react';
 import styles from './Home.module.css';
 
 /* ========== COMPONENTES ========== */
-import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
 /* ========== IMAGENS ========== */
 import Icon from '../Assets/Icon.png';
-import DetalheIcon from '../Assets/detalheIcon.png';
+import Stars from '../Assets/stars.png'
 import EmailIcon from '../Assets/EmailIcon.png';
 import PhoneIcon from '../Assets/PhoneIcon.png';
-
+import FuturosClientes from '../Assets/FuturosClientes.png';
+import Logo from '../Assets/Logo Black.png';
 
 function Home() {
 
@@ -63,10 +63,29 @@ function Home() {
     function scrollTo(ref) {
         window.scrollTo({ behavior: "smooth", top: ref.current.offsetTop });
     }
+
+    const contato = useRef();
+    function scrollTo(ref) {
+        window.scrollTo({ behavior: "smooth", top: ref.current.offsetTop });
+    }
+
+    const inicio = useRef();
+    function scrollTo(ref) {
+        window.scrollTo({ behavior: "smooth", top: ref.current.offsetTop });
+    }
+
     return (
         <div>
-            <div className={styles.Inicio}>
-                <Header />
+            <div className={styles.scrollCima}>
+                <button onClick={() => scrollTo(inicio)}> {'>'}</button>
+            </div>
+            <header>
+                <div className={styles.LogoContainer}>
+                    <img src={Logo} />
+                </div>
+                <button onClick={() => scrollTo(contato)} className={styles.ButtonContato} >Contato</button>
+            </header>
+            <div className={styles.Inicio} ref={inicio}>
                 <div className={styles.TextApresntacao}>
                     <h1>
                         Bem vindo a Alpha<span className={styles.Azul}>D</span>ev<span className={styles.Azul}>’</span>s
@@ -123,7 +142,7 @@ function Home() {
                         <div className={styles.InfoCriacaoEC}>
                             <h1>Criação do seu E-Comerce</h1>
                             <h2>
-                                Construa seu e-commerce conosco. Nossa equipe habilidosa transforma sua visão em realidade, criando uma plataforma que cativa clientes e impulsiona vendas.
+                                Inicie seu e-commerce conosco. Nossa equipe transforma sua visão em realidade, criando uma plataforma que cativa clientes e aumenta as vendas.
                             </h2>
                         </div>
                     </div>
@@ -180,30 +199,37 @@ function Home() {
                     <h1>Clientes</h1>
                 </div>
                 <div className={styles.PrincipaisClientes}>
-                    <div className={styles.ClienteHorti}>
-                        <div className={styles.NomeProjeto}>
-                            <h1>HortiFruti</h1>
+                    <div className={styles.Cliente1}>
+                        <div className={styles.Avaliacao}>
+                            <img src={Stars} />
                         </div>
-                        <button className={styles.ButtonAcesse}>Acesse</button>
-                        <div className={styles.EffectSombra} />
+                        <div className={styles.TextAvaliacao}>
+                            <h1>Gostaríamos de agradecer à AlphaDev's Innovations pela criação de nossa incrível plataforma de e-commerce. Vocês realmente impulsionaram nossas vendas e cativaram nossos clientes. Muito obrigado pelo excelente trabalho!</h1>
+                        </div>
+                        <div className={styles.PessoaAvaliou}>
+                            <div className={styles.InfoPessoa}>
+                                <div className={styles.FotoPerfil} />
+                                <div className={styles.NomeProficao}>
+                                    <h1>Júlio Cesar de Souza</h1>
+                                    <h2>CEO da HortiFamilia </h2>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.Cliente2}>
-                        <div className={styles.NomeProjeto}>
-                            <h1>????????</h1>
+                        <div className={styles.ClientesFuturos} >
+                            <img src={FuturosClientes} />
                         </div>
-                        <button className={styles.ButtonAcesse}>Acesse</button>
-                        <div className={styles.EffectSombra} />
                     </div>
                     <div className={styles.Cliente3}>
-                        <div className={styles.NomeProjeto}>
-                            <h1>????????</h1>
+                        <div className={styles.ClientesFuturos} >
+                            <img src={FuturosClientes} />
                         </div>
-                        <button className={styles.ButtonAcesse}>Acesse</button>
-                        <div className={styles.EffectSombra} />
                     </div>
                 </div>
             </div>
-            <div className={styles.Contatos}>
+            <div className={styles.Contatos} ref={contato}>
                 <div className={styles.NameContatos}>
                     <h1>Contatos</h1>
                 </div>
